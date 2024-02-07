@@ -1,0 +1,16 @@
+ORMs - Object Relation Mapping
+    Implementation of writing queries using object-oriented programming.
+
+Create a models file with conn.js to act as the connection to the database.
+
+new Sequelize model:
+    new Sequelize(databaseName, username, password, {
+        host: link to connect to
+        dialect: SQL language.
+    })
+
+A model is an abstraction that represents a table in a database.
+
+There are two ways to define a model:
+    Call sequelize.define(modelName, attributes, options)
+    Extend Model and call init(attributes, options)
